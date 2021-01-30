@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:hint="Nhập mã hóa đơn chi tiết"
+        android:textColorHint="@color/greydam"
+        android:fontFamily="@font/mo_re"
+        android:background="@drawable/edt_login_click"
+        android:padding="12dp"
+        android:id="@+id/edt_MaHoaDonChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:hint="Nhập mã hóa đơn"
+        android:id="@+id/edt_MaHoaDon"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Spinner
+        android:hint="Nhập mã sách"
+        android:id="@+id/edt_MaSach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/edt_SoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_login_click"
+        android:fontFamily="@font/mo_re"
+        android:hint="Nhập số lượng"
+        android:padding="12dp"
+        android:textColorHint="@color/greydam" />
+
+    <Button
+        android:id="@+id/btn_ThemHoaDon"
+        android:text="Thêm"
+        android:textColor="@color/white"
+        android:fontFamily="@font/mo_re"
+        android:textStyle="bold"
+        android:background="@drawable/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

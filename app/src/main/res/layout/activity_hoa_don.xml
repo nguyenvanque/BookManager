@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HoaDonActivity">
+
+    <EditText
+
+        android:layout_margin="15dp"
+        android:padding="12dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mo_re"
+        android:background="@drawable/edt_login_click"
+        android:id="@+id/edMaHoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã hoá đơn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:layout_margin="15dp"
+            android:padding="12dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mo_re"
+            android:background="@drawable/edt_login_click"
+            android:id="@+id/edNgayMua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="DD-MM-YYYY" />
+
+        <Button
+            android:fontFamily="@font/mo_re"
+            android:background="@drawable/button_login"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:id="@+id/picDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="datePicker"
+            android:text="Chọn" />
+    </LinearLayout>
+
+    <Button
+        android:fontFamily="@font/mo_re"
+        android:background="@drawable/button_login"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:id="@+id/btnADDHoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ADDHoaDon"
+        android:text="Chọn" />
+</LinearLayout>

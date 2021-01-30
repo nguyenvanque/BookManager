@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".ListHoaDonActivity">
+    <EditText
+        android:layout_alignParentTop="true"
+        android:id="@+id/edSearch"
+        android:padding="12dp"
+        android:fontFamily="@font/mo_re"
+        android:hint="Nhập mã hóa đơn cần tìm"
+        android:textColorHint="@color/greydam2"
+        android:background="@drawable/edt_login_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1" />
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:divider="@null"
+        android:layout_below="@id/edSearch"
+        android:dividerHeight="15dp"
+        android:id="@+id/lvHoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_Add"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

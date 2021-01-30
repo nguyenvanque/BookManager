@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".HoaDonChiTietActivity">
+
+    <EditText
+        android:fontFamily="@font/mo_re"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:textSize="16dp"
+        android:background="@drawable/edt_login_click"
+        android:hint="Mã hóa đơn"
+        android:id="@+id/edMaHoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:fontFamily="@font/mo_re"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:id="@+id/spMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <EditText
+        android:fontFamily="@font/font"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:textSize="16dp"
+        android:background="@drawable/edt_login_click"
+        android:id="@+id/edSoLuongMua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số Lượng"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:fontFamily="@font/mo_re"
+            android:background="@drawable/button_login"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ADDHoaDonCHITIET"
+            android:text="Thêm" />
+
+        <Button
+           android:fontFamily="@font/mo_re"
+            android:background="@drawable/button_login"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="thanhToanHoaDon"
+            android:text="Thanh Toán" />
+    </LinearLayout>
+    <TextView
+        android:fontFamily="@font/mo_re"
+        android:layout_margin="15dp"
+        android:id="@+id/tvThanhTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền:"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:layout_margin="15dp"
+        android:id="@+id/lvCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+</LinearLayout>

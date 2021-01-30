@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/background_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="SỬA LOẠI SÁCH"
+        android:fontFamily="@font/mo_re"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_ChonHinh"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <EditText
+        android:id="@+id/edt_MaTheLoai"
+        android:background="@drawable/edt_login_click"
+        android:padding="14dp"
+        android:fontFamily="@font/mo_re"
+        android:textColor="@color/black"
+        android:textColorHint="@color/greydam2"
+        android:layout_marginTop="10dp"
+        android:hint="Mã thể loại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_TenTheLoai"
+        android:hint="Tên thể loại"
+        android:background="@drawable/edt_login_click"
+        android:padding="14dp"
+        android:fontFamily="@font/mo_re"
+        android:textColor="@color/black"
+        android:textColorHint="@color/greydam2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_MoTa"
+        android:hint="Mô tả"
+        android:background="@drawable/edt_login_click"
+        android:padding="14dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mo_re"
+        android:textColor="@color/black"
+        android:textColorHint="@color/greydam2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_ViTri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mo_re"
+        android:textColor="@color/black"
+        android:textColorHint="@color/greydam2"
+        android:background="@drawable/edt_login_click"
+        android:hint="Vị trí"
+        android:padding="14dp"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_Them"
+            android:text="Sửa"
+            android:layout_weight="1"
+            android:fontFamily="@font/mo_re"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_Huy"
+            android:text="Hủy"
+            android:layout_weight="1"
+            android:fontFamily="@font/mo_re"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
